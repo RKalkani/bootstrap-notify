@@ -409,6 +409,21 @@
 		}
 	};
 
+	$.notifySuccess = function (content, options) {
+		return $.notify(content, $.extend(true, {}, {type: 'success'}, options));
+	};
+
+	$.notifyInfo = function (content, options) {
+		return $.notify(content, $.extend(true, {}, {type: 'info'}, options));
+	};
+
+	$.notifyWarning = function (content, options) {
+		return $.notify(content, $.extend(true, {}, {type: 'warning'}, options));
+	};
+
+	$.notifyDanger = function (content, options) {
+		return $.notify(content, $.extend(true, {}, {type: 'danger'}, options));
+	};
 
 }));
 
